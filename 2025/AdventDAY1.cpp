@@ -6,9 +6,12 @@ ll hits_during(int start, ll a, char dir)
 {
     
     int k;
-    if (dir == 'R') {
+    if (dir == 'R') 
+    {
         k = (100 - start) % 100;
-    } else {
+    } 
+    else 
+    {
         k = start % 100;
     }
     if (k == 0) k = 100;          
@@ -53,38 +56,39 @@ int main()
 }
 
 
+/*
 
-// int main() 
-// {
-//     //ios::sync_with_stdio(false);
-//     //cin.tie(nullptr);
+int main() 
+{
 
-//     string token;
-//     int start = 50;         
-//     ll count = 0;      
+    string token;
+    int start = 50;         
+    ll count = 0;      
 
-//     while (cin >> token) 
-//     {
-//         if (token.empty()) continue;
-//         char dir = token[0];
-//         ll a = stoll(token.substr(1));
+    while (cin >> token) 
+    {
+        if (token.empty()) continue;
+        char dir = token[0];
+        ll a = stoll(token.substr(1));
 
-//         int rem = (int)(a % 100);
-//         if (dir == 'R') 
-//         {
-//             start = (start + rem) % 100;
-//             count+= rem
-//         } else 
-//         {
-//             start = (start - rem) % 100;
-//             if (start < 0) start += 100;
-//             count -= rem;
-//         }
+        int rem = (int)(a % 100);
+        if (dir == 'R') 
+        {
+            start = (start + rem) % 100;
+            count+= rem
+        } else 
+        {
+            start = (start - rem) % 100;
+            if (start < 0) start += 100;
+            count -= rem;
+        }
 
-//         if (start == 0) part1++;
-//     }
+        if (start == 0) part1++;
+    }
 
-//     cout << count << "\n";
-//  
-//     return 0;
-// }
+    cout << count << "\n";
+ 
+    return 0;
+}
+
+*/
