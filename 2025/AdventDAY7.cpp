@@ -7,7 +7,6 @@ void solve1()
     vector<string> grid;
     string line;
     
-    // Read all lines into a vector
     while(getline(cin, line))
     {
         grid.push_back(line);
